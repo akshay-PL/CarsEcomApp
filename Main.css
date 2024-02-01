@@ -1,0 +1,140 @@
+.outercontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background-color: #f4f4f4;
+  padding: 20px; /* Add padding for spacing */
+}
+
+.logo {
+  position: absolute;
+  top: 10px; /* Adjust top position as needed */
+  left: 10px; /* Adjust left position as needed */
+}
+
+.carlogoimage {
+  max-width: 100px; /* Adjust the max-width as needed */
+  height: auto;
+}
+
+.heading{
+  font-size: 60px; /* Adjust the font size as needed */
+  font-weight: bold; /* Adjust the font weight as needed */
+  color: #3c009d; /* Your desired text color */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Optional text shadow for better visibility */
+}
+
+.topRightLinks {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.mainpageoption,
+.aboutus,
+.contact {
+  cursor: pointer;
+}
+
+.nav-link {
+  display: inline-block;
+  padding: 10px;
+  /* Additional styling for the links if needed */
+}
+
+/* Add hover effect if desired */
+.mainpageoption:hover,
+.aboutus:hover,
+.contact:hover {
+  background-color: #f2bebe;
+}
+
+.loginsignupbutton button {
+  color: white;
+  background-color: #3c009d;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.loginsignupbutton button:hover {
+  background-color: red;
+}
+.searchbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+input {
+  margin-right: 10px;
+  width: 300px;
+  font-size: 16px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.car1,
+.car2,
+.car3,
+.car4,
+.car5,
+.car6 {
+  border: 1px solid #0b0101;
+  padding: 10px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.car1:hover,
+.car2:hover,
+.car3:hover,
+.car4:hover,
+.car5:hover,
+.car6:hover {
+  background-color: #23f50b6f;
+}
+
+.car1-image,
+.car2-image,
+.car3-image,
+.car4-image,
+.car5-image,
+.car6-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.button {
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.car1-image,
+.car2-image,
+.car3-image,
+.car4-image,
+.car5-image,
+.car6-image {
+  width: 300px;
+  height: 200px;
+}
+
+.carlogoimage{
+  width: 75px;
+  height: 75px;
+}

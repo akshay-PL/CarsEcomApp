@@ -1,0 +1,152 @@
+.Container {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 20px;
+  width: 600px;
+  height: 650px; /* Adjust the height as needed */
+  background: #ffffff;
+  padding-bottom: 30px;
+  border-radius: 10px; /* Adjust the value as needed for the desired roundness */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle box shadow for depth */
+}
+
+.header{                                                                      /*heading "signup"*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 9px;
+  width: 100%;
+  margin-top: 30px;
+
+}
+.text{                                                                              /*heading signup beautification*/
+  color: #3c009d;
+  font-size: 48px;
+  font-weight: 700;
+
+}
+
+
+
+/*heading underline*/
+
+@keyframes underlineAnimation {
+  0% {
+      width: 0;
+      background: #3c009d;
+      opacity: 0.5;
+  }
+  50% {
+      width: 61px;
+      background: #e24806; /* Change to the desired color */
+      opacity: 1;
+  }
+  100% {
+      width: 0;
+      background: #3c009d;
+      opacity: 0.5;
+  }
+}
+
+.underline {
+  width: 61px;
+  height: 6px;
+  background: #3c009d;
+  border-radius: 9px;
+  animation: underlineAnimation 2s ease infinite; /* Repeat the animation every 2 seconds */
+}
+
+
+
+
+
+.inputs{                                                                      /*for 3 rows username/email/password*/
+  margin-top: 55px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.input{                                                                          /*for 3 rows username/email/password especially for 3 rows*/
+  display: flex;
+  align-items: center;
+  margin: auto;
+  width: 480px;
+  height: 80px;
+  background: #eaeaea;
+  border-radius: 6px;
+}
+
+.input img{                                                            /*for 3 rows icon*/
+  margin: 0px 30px;
+}
+
+.input input{                                                       /*for 3 rows input fields*/
+  height: 50px;
+  width: 400px;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #797979;
+  font-size: 19px;
+
+}
+
+.forgot-password{                                                             /*forgot pass option*/
+  padding-left: 62px;
+  margin-top: 27px;
+  color: #797979;
+  font-size: 18px;
+}
+
+.forgot-password span{                                                                 /*forgot pass color*/
+  color: #4c00b4; 
+  cursor: pointer;
+
+}
+
+  /*submit option*/
+
+  .submit-container {
+      display: flex;
+      gap: 30px;
+      margin: 85px; 
+    }
+
+/*submit further option*/
+.submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 220px;
+  height: 59px;
+  color: #fff;
+  background: #4c00b4;
+  border-radius: 50px;
+  font-size: 19px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.gray{
+  background: #EAEAEA;
+  color: #676767;
+}
+
+.submit-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px; /* Set the width and height to the same value for a square shape */
+  height: 220px; /* Set the width and height to the same value for a square shape */
+  color: #fff;
+  background: #4c00b4;
+  border-radius: 20px; /* Adjust the border-radius as needed for rounded corners */
+  font-size: 26px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 10px; /* Adjust the margin-top as needed */
+  margin-left: 240px; /* Move the button to the right side */
+}
+
