@@ -1,0 +1,53 @@
+/* Add this styling to your CSS file or style tag */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .logo img {
+    width: 50px; /* Adjust as needed */
+    height: auto;
+  }
+  
+  .heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 auto; /* Center the heading */
+  }
+  
+  
+  .nav-links {
+    display: flex;
+  }
+  
+  .nav-link {
+    margin-right: 20px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .carlogoimage {
+    max-width: 50px;
+    height: 50px;
+  }
+  
+  /* Additional styling for About and Contact components if needed */
+  
+  .about-container,
+  .contact-container {
+    padding: 20px;
+    margin: 20px;
+    background-color: #fff;
+    color: #333;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+  }
+  
+  /* You can add more styles as needed */
+  

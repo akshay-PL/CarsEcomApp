@@ -4,8 +4,12 @@ import email_icon from './Assets/email.png';
 import password_icon from './Assets/password.png';
 import user_icon from './Assets/person.png';
 import Main from './Main'; // Import Main component
+import { useNavigate } from 'react-router-dom';
+// import { usenavigate } from 'react-router-dom';
+
 
 const LoginSignup = () => {
+  const navigate = useNavigate();
   const [action, setAction] = useState('Sign up');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -27,9 +31,9 @@ const LoginSignup = () => {
   };
 
   const handleSubmitButton = () => {
-    console.log('Submit clicked');
-    setSubmitClicked(true);
-    handleLoginuser();
+    navigate("/main")
+    // setSubmitClicked(true);
+    // handleLoginuser();
   };
 
   const handleLoginuser = () => {
@@ -37,6 +41,7 @@ const LoginSignup = () => {
       if (email === storedEmail && password === storedPassword) {
         console.log('Login Successful');
         handleToggleMain(); // Automatically show Main component on successful login
+        navigate.push('/main');
       } else if (email === storedEmail) {
         console.log('Email is correct, password invalid');
       } else if (password === storedPassword) {
